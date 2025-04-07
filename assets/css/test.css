@@ -1,0 +1,444 @@
+/* Normalize common elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Global Styles for Buttons */
+button,
+a.button {
+    background-color: #f25c66;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+a.button:hover {
+    background: #c0392b;
+}
+
+/* Common Text Styles */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #1d1f2b;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p,
+span {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Common Link Styles */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #f25c66;
+}
+
+/* Flexbox Layout */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Box Shadows */
+.shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    background: #f1eeff;
+    flex: 1;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Normalize Specific Components */
+footer {
+    background: #f9f9ff url('../images/Footer\ img.png') no-repeat right bottom;
+    background-size: contain;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .footer-logo {
+    width: 120px;
+}
+
+footer .footer-social-icons i {
+    color: #de6041;
+    margin-right: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Normalize specific button classes */
+.tx-promo-content button,
+.tx-tour-explore {
+    background-color: #f25c66;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tx-promo-content button:hover,
+.tx-tour-explore:hover {
+    background: #c0392b;
+}
+
+/* Normalize specific classes with similar styles */
+.tx-tour-card,
+.testimonial-card-new {
+    border-radius: 12px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.tx-tour-card .tx-tour-title-wrap,
+.testimonial-card-new .client-name-new {
+    font-weight: bold;
+    color: #000;
+}
+
+.tx-tour-description,
+.testimonial-text-new {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.tx-tour-price,
+.testimonial-text-new::before,
+.testimonial-text-new::after {
+    color: #f25c66;
+}
+
+/* Gallery Elements */
+.tx-promo-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+/* Normalize spacing for sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Tour Package Cards */
+.tx-tour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section-new {
+    background-image: url('../images/testimoni-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-new {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.promo-text-new {
+    color: #f25c66;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title-new {
+    font-size: 28px;
+    color: #1d1f2b;
+    margin: 10px 0 40px;
+}
+
+.testimonial-wrapper-new {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.testimonial-carousel-new {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    cursor: grab;
+}
+
+.testimonial-item-new {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    user-select: none;
+}
+
+.testimonial-card-new {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.client-image-new img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #f25c66;
+    margin-bottom: 15px;
+}
+
+.testimonial-text-new {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.testimonial-text-new::before,
+.testimonial-text-new::after {
+    content: '"';
+    font-size: 60px;
+    color: #ccc;
+    position: absolute;
+    font-family: serif;
+}
+
+.testimonial-text-new::before {
+    left: 0;
+    top: -10px;
+}
+
+.testimonial-text-new::after {
+    right: 0;
+    bottom: -20px;
+}
+
+.client-name-new {
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+.testimonial-controls-new {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.testimonial-controls-new button {
+    pointer-events: all;
+    background: #444;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.testimonial-controls-new button:hover {
+    background: #f25c66;
+}
+
+.testimonial-indicators-new {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator-new {
+    width: 20px;
+    height: 3px;
+    background: #ccc;
+    margin: 0 4px;
+    transition: background 0.3s;
+}
+
+.indicator-new.active {
+    background: #f25c66;
+}
+
+/* Footer Section Styles */
+.footer {
+    background: #f9f9ff url('../images/Footer\ img.png') no-repeat right bottom;
+    background-size: contain;
+    padding: 60px 20px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo-section {
+    max-width: 220px;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer-description {
+    font-size: 13px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.footer-social-icons {
+    margin-top: 10px;
+}
+
+.footer-social-icons i {
+    color: #de6041;
+    margin-right: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 6px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-newsletter h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.newsletter-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.newsletter-input input {
+    padding: 10px;
+    border: none;
+    background: #f1eeff;
+    flex: 1;
+    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.newsletter-input button {
+    background: #de6041;
+    border:
+}

@@ -5,194 +5,573 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Xpro</title>
+    <!-- <link rel="stylesheet" href="assets/css/normalized.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/test.css"> -->
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <script src="./assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/e36c47ecc8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div><img src="./assets/images/logo.png" alt="Logo" /></div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li>
-                    <a href="#">Services</a>
-                    <ul>
-                        <li><a href="#">Honeymoon Packages</a></li>
-                        <li><a href="#">Tours Packages</a></li>
-                        <li><a href="#">Musical Events</a></li>
-                        <li><a href="#">Build Packages</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Upcoming Packages</a></li>
-            </ul>
-        </nav>
-        <button>Get in Touch</button>
-    </header>
-    <main>
-        <section class="hero-section">
-            <div class="hero-wrapper">
-                <div class="hero-data">
-                    <span><img src="./assets/images/vector.png" alt="decor" /></span>
-                    <h1>No matter where you’re going to, we’ll take you there</h1>
-                    <div class="booking__form">
-                        <a href="#">Where to?</a>
-                        <a href="#">Travel Type <span><i class="ri-arrow-down-s-line"></i></span></a>
-                        <a href="#">Duration <span><i class="ri-arrow-down-s-line"></i></span></a>
-
-                        <button type="submit" class="submit__btn">Submit</button>
-                    </div>
-                    <div class="tripadvisor">
-                        <picture class="clients-stack">
-                            <img src="./assets/images/client-1.png" alt="clients" />
-                            <img src="./assets/images/client-2.png" alt="clients" />
-                            <img src="./assets/images/client-3.png" alt="clients" />
-                            <img src="./assets/images/client-4.png" alt="clients" />
-                            <img src="./assets/images/client-5.png" alt="clients" />
-                            <img src="./assets/images/client-6.png" alt="clients" />
-                        </picture>
-                        <p>2,500 people booked Tamanomaki Event in the last 24 hours</p>
-                    </div>
-                </div>
-                <div class="scroll-down-wrapper">
-                    <div class="outer-circle"></div>
-                    <div class="inner-circle"></div>
-                    <div class="scroll-down">Scroll</div>
-                </div>
+        <!--========== Header Section Start ==========-->
+        <header class="tx-header">
+            <div class="tx-header-logo">
+                <img src="./assets/images/logo.png" alt="Logo" />
             </div>
-        </section>
-        <section class="brands">
-            <div class="container">
-                <div class="companies-slider">
-                    <div class="slider-track">
-                        <picture>
-                            <img src="/assets/images/cp-1.png" alt="brand-company" />
-                            <img src="/assets/images/cp-2.png" alt="brand-company" />
-                            <img src="/assets/images/cp-3.png" alt="brand-company" />
-                            <img src="/assets/images/cp-4.png" alt="brand-company" />
-                            <img src="/assets/images/cp-5.png" alt="brand-company" />
-                            <img src="/assets/images/cp-6.png" alt="brand-company" />
-                            <img src="/assets/images/cp-7.jpg" alt="brand-company" />
-                            <img src="/assets/images/cp-8.png" alt="brand-company" />
-                            <!-- <img src="/assets/images/cp-9.webp" alt="brand-company">
-                            <img src="/assets/images/cp-10.jpg" alt="brand-company"> -->
 
-                            <!-- Duplicate for seamless loop -->
-                            <img src="/assets/images/cp-1.png" alt="brand-company" />
-                            <img src="/assets/images/cp-2.png" alt="brand-company" />
-                            <img src="/assets/images/cp-3.png" alt="brand-company" />
-                            <img src="/assets/images/cp-4.png" alt="brand-company" />
-                            <img src="/assets/images/cp-5.png" alt="brand-company" />
-                        </picture>
+            <nav class="tx-header-nav">
+                <ul class="tx-header-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#">Services</a>
+                        <ul class="tx-header-dropdown">
+                            <li><a href="#">Honeymoon Packages</a></li>
+                            <li><a href="#">Tours Packages</a></li>
+                            <li><a href="#">Musical Events</a></li>
+                            <li><a href="#">Build Packages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Upcoming Packages</a></li>
+                </ul>
+            </nav>
+
+            <button class="tx-header-btn">Get in Touch</button>
+        </header>
+        <!--========== Header Section End ==========-->
+
+        <main>
+            <!--========== Hero Section Start ==========-->
+            <section class="tx-hero-section">
+                <div class="tx-hero-wrapper">
+                    <div class="tx-hero-content">
+                        <span class="tx-hero-decor"><img src="./assets/images/vector.png" alt="decor" /></span>
+                        <h1 class="tx-hero-heading">
+                            No matter where you’re going to, we’ll take you there
+                        </h1>
+                        <div class="tx-hero-booking-form">
+                            <a href="#">Where to?</a>
+                            <a href="#">
+                                Travel Type
+                                <span><i class="ri-arrow-down-s-line"></i></span>
+                            </a>
+                            <a href="#">
+                                Duration <span><i class="ri-arrow-down-s-line"></i></span>
+                            </a>
+                            <button type="submit" class="tx-hero-submit-btn">
+                                Submit
+                            </button>
+                        </div>
+
+                        <div class="tx-hero-tripadvisor">
+                            <picture class="tx-hero-clients-stack">
+                                <img src="./assets/images/client-1.png" alt="clients" />
+                                <img src="./assets/images/client-2.png" alt="clients" />
+                                <img src="./assets/images/client-3.png" alt="clients" />
+                                <img src="./assets/images/client-4.png" alt="clients" />
+                                <img src="./assets/images/client-5.png" alt="clients" />
+                                <img src="./assets/images/client-6.png" alt="clients" />
+                            </picture>
+                            <p>
+                                2,500 people booked Tamanomaki Event in the last 24 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tx-hero-scroll-wrapper">
+                        <div class="tx-hero-outer-circle"></div>
+                        <div class="tx-hero-inner-circle"></div>
+                        <div class="tx-hero-scroll-text">Scroll</div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <h4 class="subtitle">CATEGORY</h4>
-                <h1 class="title">We Offer <span>Best Services</span></h1>
+            </section>
+            <!--========== Hero Section End ==========-->
 
-                <div class="cards">
-                    <!-- Card 1 -->
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <div class="icon-bg">
-                                <img src="./assets/images/tour-guide 1.svg" alt="Guided Tours" />
-                            </div>
-                            <h4>Guided Tours</h4>
-                            <p>
-                                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-                            </p>
-                        </div>
-                    </div>
+            <!--========== Brands Company Slider Section Start ==========-->
+            <section class="tx-brands-section">
+                <div class="tx-brands-container">
+                    <div class="tx-brands-slider">
+                        <div class="tx-brands-track">
+                            <picture class="tx-brands-pictures">
+                                <img src="/assets/images/cp-1.png" alt="brand-company" />
+                                <img src="/assets/images/cp-2.png" alt="brand-company" />
+                                <img src="/assets/images/cp-3.png" alt="brand-company" />
+                                <img src="/assets/images/cp-4.png" alt="brand-company" />
+                                <img src="/assets/images/cp-5.png" alt="brand-company" />
+                                <img src="/assets/images/cp-6.png" alt="brand-company" />
+                                <img src="/assets/images/cp-7.jpg" alt="brand-company" />
+                                <img src="/assets/images/cp-8.png" alt="brand-company" />
 
-                    <!-- Card 2 (with red shape behind) -->
-                    <div class="card-wrapper">
-                        <span class="corner-shape"></span>
-                        <div class="card active">
-                            <div class="icon-bg">
-                                <img src="./assets/images/travelling 1.svg" alt="Best Flights Options" />
-                            </div>
-                            <h4>Best Flights Options</h4>
-                            <p>
-                                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <div class="icon-bg">
-                                <img src="./assets/images/hands 1.svg" alt="Religious Tours" />
-                            </div>
-                            <h4>Religious Tours</h4>
-                            <p>
-                                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 (with yellow background on icon) -->
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <div class="icon-bg yellow">
-                                <img src="./assets/images/medical-team 1.svg" alt="Medical Insurance" />
-                            </div>
-                            <h4>Medical insurance</h4>
-                            <p>
-                                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-                            </p>
+                                <!-- Duplicate for seamless loop -->
+                                <img src="/assets/images/cp-1.png" alt="brand-company" />
+                                <img src="/assets/images/cp-2.png" alt="brand-company" />
+                                <img src="/assets/images/cp-3.png" alt="brand-company" />
+                                <img src="/assets/images/cp-4.png" alt="brand-company" />
+                                <img src="/assets/images/cp-5.png" alt="brand-company" />
+                            </picture>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="pkg">
-            <div class="pkg-wrapper">
-                <div class="container-1">
-                    <div class="romantic-img">
-                        <img src="./assets/images/Illustration.png" alt="Cuple-Image">
+            </section>
+            <!--========== Brands Company Slider Section End ==========-->
+
+            <!--========== Services Section Start ==========-->
+            <section class="tx-services-section">
+                <div class="tx-services-container">
+                    <h4 class="tx-services-subtitle">CATEGORY</h4>
+                    <h1 class="tx-services-title">
+                        We Offer <span>Best Services</span>
+                    </h1>
+
+                    <div class="tx-services-cards">
+                        <!-- Card 1 -->
+                        <div class="tx-services-card-wrapper">
+                            <div class="tx-services-card">
+                                <div class="tx-services-icon-bg">
+                                    <img src="./assets/images/tour-guide 1.svg" alt="Guided Tours" />
+                                </div>
+                                <h4>Guided Tours</h4>
+                                <p>
+                                    sunt qui repellat saepe quo velit aperiam id aliquam
+                                    placeat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="tx-services-card-wrapper">
+                            <span class="tx-services-corner-shape"></span>
+                            <div class="tx-services-card active">
+                                <div class="tx-services-icon-bg">
+                                    <img src="./assets/images/travelling 1.svg" alt="Best Flights Options" />
+                                </div>
+                                <h4>Best Flights Options</h4>
+                                <p>
+                                    sunt qui repellat saepe quo velit aperiam id aliquam
+                                    placeat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="tx-services-card-wrapper">
+                            <div class="tx-services-card">
+                                <div class="tx-services-icon-bg">
+                                    <img src="./assets/images/hands 1.svg" alt="Religious Tours" />
+                                </div>
+                                <h4>Religious Tours</h4>
+                                <p>
+                                    sunt qui repellat saepe quo velit aperiam id aliquam
+                                    placeat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="tx-services-card-wrapper">
+                            <div class="tx-services-card">
+                                <div class="tx-services-icon-bg tx-yellow">
+                                    <img src="./assets/images/medical-team 1.svg" alt="Medical Insurance" />
+                                </div>
+                                <h4>Medical insurance</h4>
+                                <p>
+                                    sunt qui repellat saepe quo velit aperiam id aliquam
+                                    placeat.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="Package-details">
-                        <span>HONEYMOON SPECIALS</span>
-                        <h1>Our Romantic Tropical Destinations</h1>
-                        <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
-                            internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in
-                            maxime quasi aut ducimus illum aut optio quibusdam!</p>
+                </div>
+            </section>
+            <!--========== Services Section End ==========-->
+
+            <!--========== Romantic Section Start ==========-->
+            <section class="tx-romantic-section">
+                <div class="tx-romantic-wrapper">
+                    <!-- Honeymoon Special -->
+                    <div class="tx-romantic-container-1">
+                        <div class="tx-romantic-img">
+                            <img src="./assets/images/Illustration.png" alt="Couple Image" />
+                        </div>
+                        <div class="tx-romantic-details">
+                            <span>HONEYMOON SPECIALS</span>
+                            <h1>Our Romantic Tropical Destinations</h1>
+                            <p>
+                                Et labore harum non nobis ipsum eum molestias mollitia et
+                                corporis praesentium a laudantium internos. Non quis eius
+                                quo eligendi corrupti et fugiat nulla qui soluta recusandae
+                                in maxime quasi aut ducimus illum aut optio quibusdam!
+                            </p>
+                            <button><a href="#">View Packages</a></button>
+                        </div>
+                    </div>
+
+                    <!-- Booking Steps -->
+                    <div class="tx-romantic-container-2">
+                        <div class="tx-romantic-booking-text">
+                            <span>Fast & Easy</span>
+                            <h1>Get Your Favourite Resort Bookings</h1>
+
+                            <div class="tx-romantic-resort-booking">
+                                <div class="tx-romantic-booking-step">
+                                    <span><img src="./assets/images/squar.svg" alt="square" /></span>
+                                    <div>
+                                        <h6>Choose Destination</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Urna, tortor tempus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tx-romantic-booking-step">
+                                    <span><img src="./assets/images/swim.svg" alt="swimming" /></span>
+                                    <div>
+                                        <h6>Check Availability</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Urna, tortor tempus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tx-romantic-booking-step">
+                                    <span><img src="./assets/images/car.svg" alt="car" /></span>
+                                    <div>
+                                        <h6>Let’s Go</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Urna, tortor tempus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tx-romantic-trip-booking">
+                            <img src="./assets/images/Illustration-2.png" alt="trip-booking" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--========== Romantic Section End ==========-->
+
+            <!--========== Holiday Section Start ==========-->
+            <section class="tx-holiday-section">
+                <div class="tx-holiday-content">
+                    <h1>
+                        Let's make your Next Holiday
+                        <span class="tx-holiday-underline">Amazing</span>
+                    </h1>
+                </div>
+            </section>
+            <!--========== Holiday Section End ==========-->
+
+            <!--========== Promotion Section Start ==========-->
+            <section class="tx-promo-section">
+                <div class="tx-promo-wrapper">
+                    <div class="tx-promo-content">
+                        <span>PROMOTION</span>
+                        <h1>We Provide You Best<br />Europe Sightseeing Tours</h1>
+                        <p>
+                            Et labore harum non nobis ipsum eum molestias mollitia et
+                            corporis praesentium a laudantium internos. Non quis eius quo
+                            eligendi corrupti et fugiat nulla qui soluta recusandae in
+                            maxime quasi aut ducimus illum aut optio quibusdam!
+                        </p>
                         <button><a href="#">View Packages</a></button>
                     </div>
-                </div>
-                <div class="container-2">
-                    <span>Fast & Easy</span>
-                    <h1>Get Your Favourite Resort Bookings</h1><!---H1 or h2 questions-->
-                    <div class="resort-booking">
-                        <div class="booking-step">
-                            <span><img src="./assets/images/squar.svg" alt="squar"></span>
-                            <h6>Chose Destination</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
-                        </div>
-                        <div class="booking-step">
-                            <span><img src="./assets/images/swim.svg" alt="swiming"></span>
-                            <h6>Check Availability</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+
+                    <div class="tx-promo-gallery">
+                        <div class="tx-promo-left">
+                            <div class="tx-promo-card">
+                                <img src="assets/images/castle.png" alt="castle" />
+                                <span>$400</span>
+                            </div>
+                            <div class="tx-promo-card">
+                                <img src="./assets/images/colosium.png" alt="colosium" />
+                                <span>$500</span>
+                            </div>
+                            <div class="tx-promo-card">
+                                <img src="./assets/images/german-lake.png" alt="lake" />
+                                <span>$800</span>
+                            </div>
+                            <div class="tx-promo-card">
+                                <img src="./assets/images/big-ben.png" alt="clock-tower" />
+                                <span>$700</span>
+                            </div>
                         </div>
 
-                        <div class="booking-step">
-                            <span><img src="./assets/images/car.svg" alt="car"></span>
-                            <h6>Let's Go</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <div class="tx-promo-eiffel">
+                            <img src="assets/images/ifel.png" alt="ifel-tower" />
                         </div>
                     </div>
-                    <div class="trip-booking">
-                        <img src="./assets/images/Illustration-2.png" alt="trip-booking">
+                </div>
+            </section>
+            <!--========== Promotion Section End ==========-->
+
+
+            <!--========== Tour Package Section Start ==========-->
+            <section class="tx-tour-section">
+                <div class="tx-tour-heading">
+                    <p class="tx-tour-subheading">TRENDY</p>
+                    <h2>Our Trending Tour Packages</h2>
+                </div>
+
+                <div class="tx-tour-cards">
+                    <!-- Switzerland Card -->
+                    <div class="tx-tour-card">
+                        <div class="tx-tour-image">
+                            <img src="./assets/images/switzerland.png" alt="Switzerland" />
+                            <div class="tx-tour-flag">
+                                <img src="./assets/images/switzerland.svg" alt="Switzerland Flag" />
+                            </div>
+                        </div>
+                        <div class="tx-tour-info">
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 8 Days &nbsp;
+                                <i class="fa-regular fa-user"></i> 25 People Going
+                            </p>
+                            <div class="tx-tour-title-wrap">
+                                <h3>Switzerland</h3>
+                                <div class="tx-tour-stars">★★★★★</div>
+                            </div>
+                            <p class="tx-tour-location">Europe</p>
+                            <p class="tx-tour-price">
+                                <span class="tx-price-new">$1,000</span>
+                                <span class="tx-price-old">$1,200</span>
+                            </p>
+                            <p class="tx-tour-description">
+                                Nam acaccumsan semam et dictumst quis in dolore enim et
+                                mollis erat eget egestas.
+                            </p>
+                            <button class="tx-tour-explore">Explore Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Amazon Card -->
+                    <div class="tx-tour-card">
+                        <div class="tx-tour-image">
+                            <img src="./assets/images/brazil.png" alt="Amazon" />
+                            <div class="tx-tour-flag">
+                                <img src="./assets/images/brazil.svg" alt="Brazil Flag" />
+                            </div>
+                        </div>
+                        <div class="tx-tour-info">
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 8 Days &nbsp;
+                                <i class="fa-regular fa-user"></i> 30 People Going
+                            </p>
+                            <div class="tx-tour-title-wrap">
+                                <h3>Amazon</h3>
+                                <div class="tx-tour-stars">★★★★★</div>
+                            </div>
+                            <p class="tx-tour-location">Brazil</p>
+                            <p class="tx-tour-price">
+                                <span class="tx-price-new">$1,223</span>
+                                <span class="tx-price-old">$1,200</span>
+                            </p>
+                            <p class="tx-tour-description">
+                                Nam acaccumsan semam et dictumst quis in dolore enim et
+                                mollis erat eget egestas.
+                            </p>
+                            <button class="tx-tour-explore">Explore Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Giza Card -->
+                    <div class="tx-tour-card">
+                        <div class="tx-tour-image">
+                            <img src="./assets/images/Egypt.png" alt="Giza" />
+                            <div class="tx-tour-flag">
+                                <img src="./assets/images/egypt.svg" alt="Egypt Flag" />
+                            </div>
+                        </div>
+                        <div class="tx-tour-info">
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 8 Days &nbsp;
+                                <i class="fa-regular fa-user"></i> 155 People Going
+                            </p>
+                            <div class="tx-tour-title-wrap">
+                                <h3>Giza</h3>
+                                <div class="tx-tour-stars">★★★★★</div>
+                            </div>
+                            <p class="tx-tour-location">Egypt</p>
+                            <p class="tx-tour-price">
+                                <span class="tx-price-new">$1,200</span>
+                            </p>
+                            <p class="tx-tour-description">
+                                Nam acaccumsan semam et dictumst quis in dolore enim et
+                                mollis erat eget egestas.
+                            </p>
+                            <button class="tx-tour-explore">Explore Now</button>
+                        </div>
                     </div>
                 </div>
-        </section>
-    </main>
+            </section>
+            <!--========== Tour Package Section End ==========-->
+
+
+            <!-----------------------Testimonial section Start-------------------->
+<section class="testimonial-section-new">
+    <div class="container-new">
+        <p class="promo-text-new">Promotion</p>
+        <h2 class="section-title-new">See What Our Clients Say About Us</h2>
+
+        <div class="testimonial-wrapper-new">
+            <div class="testimonial-controls-new">
+                <button class="prev-new" aria-label="Previous testimonial">
+                    &#8592;
+                </button>
+                <button class="next-new" aria-label="Next testimonial">
+                    &#8594;
+                </button>
+            </div>
+
+            <div class="testimonial-carousel-new" id="testimonial-carousel-new" aria-live="polite">
+                <div class="testimonial-item-new">
+                    <div class="testimonial-card-new">
+                        <div class="client-image-new">
+                            <img src="./assets/images/testimoy-1.jpg" alt="Portrait of Alyssa Carter" />
+                        </div>
+                        <p class="testimonial-text-new">
+                            Rashel brought fresh energy to our strategy sessions.
+                            She’s creative, fast, and seriously good at what she
+                            does. I wasn't sure at first, but the results were
+                            crystal clear. Our engagement went through the roof, and
+                            sales followed right behind!
+                        </p>
+                        <p class="client-name-new">Alyssa Carter – Entrepreneur</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item-new">
+                    <div class="testimonial-card-new">
+                        <div class="client-image-new">
+                            <img src="./assets/images/testimony-2.png" alt="Portrait of David Lim" />
+                        </div>
+                        <p class="testimonial-text-new">
+                            Working with Rashel felt like having a growth partner.
+                            My traffic doubled in two months! Her strategies are
+                            clear, tested, and effective. I can finally focus on
+                            running my business while the numbers climb.
+                        </p>
+                        <p class="client-name-new">David Lim – SaaS Founder</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item-new">
+                    <div class="testimonial-card-new">
+                        <div class="client-image-new">
+                            <img src="./assets/images/testimony-3.jpg" alt="Portrait of Maria Gonzalez" />
+                        </div>
+                        <p class="testimonial-text-new">
+                            She understood exactly what my audience needed. The
+                            engagement went crazy! Every piece of feedback we got
+                            was a direct result of her personalized approach and
+                            ability to read between the lines.
+                        </p>
+                        <p class="client-name-new">
+                            Maria Gonzalez – Content Creator
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item-new">
+                    <div class="testimonial-card-new">
+                        <div class="client-image-new">
+                            <img src="./assets/images/testimony-4.png" alt="Portrait of Joel Watkins" />
+                        </div>
+                        <p class="testimonial-text-new">
+                            I was stuck for months. Rashel gave me clarity and a
+                            plan that actually worked. She’s not just a
+                            strategist—she’s a partner in the growth process, and
+                            that made all the difference.
+                        </p>
+                        <p class="client-name-new">Joel Watkins – Marketing Coach</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-indicators-new" id="carousel-indicator-new" role="tablist">
+                <span class="indicator-new active" role="tab" aria-selected="true" tabindex="0"
+                    aria-label="Slide 1"></span>
+                <span class="indicator-new" role="tab" aria-selected="false" tabindex="-1"
+                    aria-label="Slide 2"></span>
+                <span class="indicator-new" role="tab" aria-selected="false" tabindex="-1"
+                    aria-label="Slide 3"></span>
+                <span class="indicator-new" role="tab" aria-selected="false" tabindex="-1"
+                    aria-label="Slide 4"></span>
+                <span class="indicator-new" role="tab" aria-selected="false" tabindex="-1"
+                    aria-label="Slide 5"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------Testimonial section End-------------------->
+
+        </main>
+
+        <!-------------------Footer Section Start--------------------->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo-section">
+                    <img src="./assets/images/footer-logo.png" alt="Travel Logo" class="footer-logo" />
+                    <p class="footer-description">
+                        Travel helps companies <br />
+                        manage payments easily.
+                    </p>
+                    <div class="footer-social-icons">
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">Las Vegas</a></li>
+                        <li><a href="#">Toronto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Your email address" />
+                        <button>Subscribe</button>
+                    </div>
+                    <p class="newsletter-note">
+                        * Will send you weekly updates for your better tour packages.
+                    </p>
+                </div>
+            </div>
+
+            <hr />
+            <div class="footer-bottom">
+                <p>Copyright © Xpro 2025. All Rights Reserved.</p>
+                <p>Made by Rashel Hossen from CodeXDevelopers</p>
+            </div>
+        </footer>
+        <!-------------------Footer Section End--------------------->
+    </body>
+
+    </html>
 </body>
 
 </html>
